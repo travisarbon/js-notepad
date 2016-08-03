@@ -1,0 +1,92 @@
+
+$primary-color: #3ecde3;
+$body-color: #e3fffc;
+$board-background: #dae8ed;
+$h2-color: #2500ff;
+$btn-main-color: #18cd66;
+$btn-danger-color: #e35353;
+$btn-success-color: #cd5ba6;
+$btn-text-color : white;
+$btn-margin: 5px;
+
+body {
+  background-color: $body-color;
+}
+
+#top, #end{
+  color: $h2-color;
+  text-align: center;
+}
+
+#content {
+  padding-top: 30px;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-bottom: 10px;
+  h2 {
+    color: $h2-color;
+
+  }
+  p {
+    color: $h2-color;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .board {
+    background-color: $primary-color;
+    padding: 5px;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 5px;
+
+    .btn-new {
+      background-color: $board-background;
+      color: $h2-color;
+      margin: 10px;
+    }
+
+    .comment-container {
+      background-color: $board-background;
+      margin: 10px;
+      padding: 5px;
+      box-shadow: 0 0 10px #000000;
+      border-radius: 5px;
+      overflow-wrap: normal;
+
+      .btn-main {
+        background-color: $btn-main-color;
+        color: $btn-text-color;
+        margin: $btn-margin;
+        margin-left: 15px;
+      }
+
+      .btn-danger {
+        background-color: $btn-danger-color;
+        color: $btn-text-color;
+        margin: $btn-margin;
+        margin-right: 15px;
+        float: right;
+      }
+
+      .btn-success {
+        background-color: $btn-success-color;
+        color: $btn-text-color;
+        margin: $btn-margin;
+        margin-left: 15px;
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #content{
+    padding: 5px;
+  }
+
+  .board {
+    margin: auto;
+    width: 300px;
+  }
+}
